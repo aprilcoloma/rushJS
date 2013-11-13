@@ -1,1 +1,2 @@
-Currentl working on this...
+About rushJS Plugin
+===================
