@@ -11,7 +11,12 @@ var listSearchableItems = function(a) {
 };
 
 
+var searchFilter = document.getElementById('search_box_txt'),
+    searchFilterValue = document.getElementById('search_box_txt').value;
 
+searchFilter.onkeyup = function () {
+   alert("input detected");
+}
 
 
 
