@@ -9,14 +9,14 @@
 </head>
 <body>
     <section class="main-container">
-        <h1 class="page-title">Browse Products</h1>
-
+        <h1 id="page-title" class="page-title searchable">Browse Products</h1>
+        <button id="buttony">Click Me</button>
 
         <!-- [Filter Form] ::start -->
-        <form class="filter-form">
+        <form id="filter-form" class="filter-form">
             <fieldset>
                 <label for="search_box_txt"></label>
-                <input id="search_box_txt" type="text" placeholder="filter products..." name="search_box_txt">
+                <input id="search_box_txt" type="text" placeholder="filter products..." name="search_box_txt" value="katy">
                 <input id="search_btn" type="image" alt="refresh search" name="search_btn" src="">
             </fieldset>
         </form>
@@ -24,6 +24,8 @@
 
         <!-- [Searchable Group] ::start -->
         <ul id="searchable-group" class="list">
+
+            <p>List all the searchable items by clicking the button below</p>
         
             <!-- [product] ::start -->
             <li class="item">
@@ -31,8 +33,8 @@
                     <figure class="product">
                         <img src="public/images/katy-perry-prism-cover.jpg" alt="Prism album cover" class="cover" />
                         <figcaption class="caption">
-                            <span class="title desc">PRISM (Deluxe)</span>
-                            <span class="name desc">Katy Perry</span>
+                            <span class="title searchable desc">PRISM (Deluxe)</span>
+                            <span class="name searchable desc">Katy Perry</span>
                             <span class="price desc">$14.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
@@ -52,8 +54,8 @@
                     <figure class="product">
                         <img src="public/images/catching-fire-cover.jpg" alt="Catching Fire book cover" class="cover" />
                         <figcaption class="caption">
-                            <span class="title desc">Catching Fire</span>
-                            <span class="name desc">Suzanne Collins</span>
+                            <span class="title searchable desc">Catching Fire</span>
+                            <span class="name searchable desc">Suzanne Collins</span>
                             <span class="price desc">$6.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
@@ -74,8 +76,8 @@
                     <figure class="product">
                         <img src="public/images/the-longest-ride.jpg" alt="The Longest Ride book cover" class="cover" />
                         <figcaption class="caption">
-                            <span class="title desc">The Longest Ride</span>
-                            <span class="name desc">Nicholas Sparks</span>
+                            <span class="title searchable desc">The Longest Ride</span>
+                            <span class="name searchable desc">Nicholas Sparks</span>
                             <span class="price desc">$6.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
@@ -95,7 +97,7 @@
                     <figure class="product">
                         <img src="public/images/monsters-university.jpg" alt="Monsters University movie poster" class="cover" />
                         <figcaption class="caption">
-                            <span class="title desc">Monsters University</span>
+                            <span class="title searchable desc">Monsters University</span>
                             <span class="price desc">$19.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
@@ -117,8 +119,8 @@
                     <figure class="product">
                         <img src="public/images/taylor-swift-red-cover.jpg" alt="Taylor Swift Red album poster" class="cover" />
                         <figcaption class="caption">
-                            <span class="title desc">Red</span>
-                            <span class="name desc">Taylor Swift</span>
+                            <span class="title searchable desc">Red</span>
+                            <span class="name searchable desc">Taylor Swift</span>
                             <span class="price desc">$14.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
@@ -139,7 +141,7 @@
                     <figure class="product">
                         <img src="public/images/white-house-down.jpg" alt="White House Down movie poster" class="cover" />
                         <figcaption class="caption">
-                            <span class="title desc">White House Down</span>
+                            <span class="title searchable desc">White House Down</span>
                             <span class="price desc">$14.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
@@ -158,8 +160,8 @@
                     <figure class="product">
                         <img src="public/images/taylor-swift-speak-now-cover.jpg" alt="Taylor Swift Speak Now album cover" class="cover" />
                         <figcaption class="caption">
-                            <span class="title desc">Speak Now</span>
-                            <span class="name desc">Taylor Swift</span>
+                            <span class="title searchable desc">Speak Now</span>
+                            <span class="name searchable desc">Taylor Swift</span>
                             <span class="price desc">$13.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
@@ -177,7 +179,6 @@
         <!-- [Searchable Group] ::end -->
     </section>
 
-    
 
     <script type="text/javascript" src="public/lib/js/common.js"></script>
 </body>
