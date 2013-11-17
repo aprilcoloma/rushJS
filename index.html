@@ -15,8 +15,8 @@
         <form id="filter-form" class="filter-form">
             <fieldset>
                 <label for="search_box_txt"></label>
-                <input id="search_box_txt" type="text" placeholder="filter products..." name="search_box_txt" value="katy">
-                <input id="search_btn" type="image" alt="refresh search" name="search_btn" src="">
+                <input id="search_box_txt" type="text" placeholder="filter products..." name="search_box_txt" onkeyup="detectInput()" />
+                <input id="search_btn" type="image" alt="refresh search" name="search_btn" src="" />
             </fieldset>
         </form>
         <!-- [Filter Form] ::end -->
@@ -31,7 +31,7 @@
                         <img src="public/images/katy-perry-prism-cover.jpg" alt="Prism album cover" class="cover" />
                         <figcaption class="caption">
                             <span class="title searchable desc">PRISM (Deluxe)</span>
-                            <span class="name searchable desc">Katy Perry</span>
+                            <span id="name" class="name searchable desc">Katy Perry</span>
                             <span class="price desc">$14.99</span>
                             <span class="btn desc">Buy this Product</span>
                         </figcaption>
