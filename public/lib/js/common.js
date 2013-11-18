@@ -21,8 +21,8 @@ var rushFilter = function(a) {
                 itemFound = searchValueResult.indexOf(searchFilterValue);
 
 
-            // if a match is found, make the matched items visible
-            // if search filter is empty, display all the items
+            // if a value exists in the array, make the matched items visible
+            // if search filter value is empty, then make all the items visible
             if ((itemFound !== -1) || (searchFilterValue === "")) {
                 listItems[x].className = "item active";
             }
