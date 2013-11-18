@@ -9,174 +9,178 @@
 </head>
 <body>
     <section class="main-container">
-        <h1 class="page-title searchable">Browse Products</h1>
+        <header id="masthead" role="banner">
+            <h1 class="page-title searchable">Browse Products</h1>
 
-        <!-- [Filter Form] ::start -->
-        <form id="filter-form" class="filter-form">
-            <fieldset>
-                <label for="search_box_txt"></label>
-                <input id="search_box_txt" type="text" placeholder="filter products..." name="search_box_txt" onkeyup="detectInput()" />
-                <input id="search_btn" type="image" alt="refresh search" name="search_btn" src="" />
-            </fieldset>
-        </form>
-        <!-- [Filter Form] ::end -->
+            <!-- [Filter Form] ::start -->
+            <form id="filter-form" class="filter-form">
+                <fieldset>
+                    <label for="search_box_txt"></label>
+                    <input id="search_box_txt" type="text" placeholder="filter products..." name="search_box_txt" />
+                    <input id="search_btn" type="image" alt="refresh search" name="search_btn" src="" />
+                </fieldset>
+            </form>
+            <!-- [Filter Form] ::end -->
+        </header>
 
-        <!-- [Searchable Group] ::start -->
-        <ul id="searchable-group" class="list">
+        <div id="inner-content">
+            <!-- [Searchable Group] ::start -->
+            <ul id="searchable-group" class="list">
 
-            <!-- [product] ::start -->
-            <li class="item">
-                <a href="#" class="list-link">
-                    <figure class="product">
-                        <img src="public/images/katy-perry-prism-cover.jpg" alt="Prism album cover" class="cover" />
-                        <figcaption class="caption">
-                            <span class="title searchable desc">PRISM (Deluxe)</span>
-                            <span id="name" class="name searchable desc">Katy Perry</span>
-                            <span class="price desc">$14.99</span>
-                            <span class="btn desc">Buy this Product</span>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="tags-holder">
-                    <a href="#" class="tag-item">katy perry</a>
-                    <a href="#" class="tag-item">music</a>
-                    <a href="#" class="tag-item">album</a>
-                </div>
-            </li>
-            <!-- [product] ::end -->
+                <!-- [product] ::start -->
+                <li class="item">
+                    <a href="#" class="list-link">
+                        <figure class="product">
+                            <img src="public/images/katy-perry-prism-cover.jpg" alt="Prism album cover" class="cover" />
+                            <figcaption class="caption">
+                                <span class="title searchable desc">PRISM (Deluxe)</span>
+                                <span id="name" class="name searchable desc">Katy Perry</span>
+                                <span class="price desc">$14.99</span>
+                                <span class="btn desc">Buy this Product</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="tags-holder">
+                        <a href="#" class="tag-item">katy perry</a>
+                        <a href="#" class="tag-item">music</a>
+                        <a href="#" class="tag-item">album</a>
+                    </div>
+                </li>
+                <!-- [product] ::end -->
 
-            <!-- [product] ::start -->
-            <li class="item">
-                <a href="#" class="list-link">
-                    <figure class="product">
-                        <img src="public/images/catching-fire-cover.jpg" alt="Catching Fire book cover" class="cover" />
-                        <figcaption class="caption">
-                            <span class="title searchable desc">Catching Fire</span>
-                            <span class="name searchable desc">Suzanne Collins</span>
-                            <span class="price desc">$6.99</span>
-                            <span class="btn desc">Buy this Product</span>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="tags-holder">
-                    <a href="#" class="tag-item">catching fire</a>
-                    <a href="#" class="tag-item">suzanne collins</a>
-                    <a href="#" class="tag-item">hunger games</a>
-                    <a href="#" class="tag-item">book</a>
-                </div>
-            </li>
-            <!-- [product] ::end -->
+                <!-- [product] ::start -->
+                <li class="item">
+                    <a href="#" class="list-link">
+                        <figure class="product">
+                            <img src="public/images/catching-fire-cover.jpg" alt="Catching Fire book cover" class="cover" />
+                            <figcaption class="caption">
+                                <span class="title searchable desc">Catching Fire</span>
+                                <span class="name searchable desc">Suzanne Collins</span>
+                                <span class="price desc">$6.99</span>
+                                <span class="btn desc">Buy this Product</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="tags-holder">
+                        <a href="#" class="tag-item">catching fire</a>
+                        <a href="#" class="tag-item">suzanne collins</a>
+                        <a href="#" class="tag-item">hunger games</a>
+                        <a href="#" class="tag-item">book</a>
+                    </div>
+                </li>
+                <!-- [product] ::end -->
 
-            <!-- [product] ::start -->
-            <li class="item">
-                <a href="#" class="list-link">
-                    <figure class="product">
-                        <img src="public/images/the-longest-ride.jpg" alt="The Longest Ride book cover" class="cover" />
-                        <figcaption class="caption">
-                            <span class="title searchable desc">The Longest Ride</span>
-                            <span class="name searchable desc">Nicholas Sparks</span>
-                            <span class="price desc">$6.99</span>
-                            <span class="btn desc">Buy this Product</span>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="tags-holder">
-                    <a href="#" class="tag-item">the longest ride</a>
-                    <a href="#" class="tag-item">nicholas sparks</a>
-                    <a href="#" class="tag-item">book</a>
-                </div>
-            </li>
-            <!-- [product] ::end -->
+                <!-- [product] ::start -->
+                <li class="item">
+                    <a href="#" class="list-link">
+                        <figure class="product">
+                            <img src="public/images/the-longest-ride.jpg" alt="The Longest Ride book cover" class="cover" />
+                            <figcaption class="caption">
+                                <span class="title searchable desc">The Longest Ride</span>
+                                <span class="name searchable desc">Nicholas Sparks</span>
+                                <span class="price desc">$6.99</span>
+                                <span class="btn desc">Buy this Product</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="tags-holder">
+                        <a href="#" class="tag-item">the longest ride</a>
+                        <a href="#" class="tag-item">nicholas sparks</a>
+                        <a href="#" class="tag-item">book</a>
+                    </div>
+                </li>
+                <!-- [product] ::end -->
 
-            <!-- [product] ::start -->
-            <li class="item">
-                <a href="#" class="list-link">
-                    <figure class="product">
-                        <img src="public/images/monsters-university.jpg" alt="Monsters University movie poster" class="cover" />
-                        <figcaption class="caption">
-                            <span class="title searchable desc">Monsters University</span>
-                            <span class="price desc">$19.99</span>
-                            <span class="btn desc">Buy this Product</span>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="tags-holder">
-                    <a href="#" class="tag-item">monsters university</a>
-                    <a href="#" class="tag-item">disney</a>
-                    <a href="#" class="tag-item">movie</a>
-                    <a href="#" class="tag-item">dvd</a>
-                    <a href="#" class="tag-item">blu ray</a>
-                </div>
-            </li>
-            <!-- [product] ::end -->
+                <!-- [product] ::start -->
+                <li class="item">
+                    <a href="#" class="list-link">
+                        <figure class="product">
+                            <img src="public/images/monsters-university.jpg" alt="Monsters University movie poster" class="cover" />
+                            <figcaption class="caption">
+                                <span class="title searchable desc">Monsters University</span>
+                                <span class="price desc">$19.99</span>
+                                <span class="btn desc">Buy this Product</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="tags-holder">
+                        <a href="#" class="tag-item">monsters university</a>
+                        <a href="#" class="tag-item">disney</a>
+                        <a href="#" class="tag-item">movie</a>
+                        <a href="#" class="tag-item">dvd</a>
+                        <a href="#" class="tag-item">blu ray</a>
+                    </div>
+                </li>
+                <!-- [product] ::end -->
 
-            <!-- [product] ::start -->
-            <li class="item">
-                <a href="#" class="list-link">
-                    <figure class="product">
-                        <img src="public/images/taylor-swift-red-cover.jpg" alt="Taylor Swift Red album poster" class="cover" />
-                        <figcaption class="caption">
-                            <span class="title searchable desc">Red</span>
-                            <span class="name searchable desc">Taylor Swift</span>
-                            <span class="price desc">$14.99</span>
-                            <span class="btn desc">Buy this Product</span>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="tags-holder">
-                    <a href="#" class="tag-item">red</a>
-                    <a href="#" class="tag-item">taylor swift</a>
-                    <a href="#" class="tag-item">album</a>
-                    <a href="#" class="tag-item">music</a>
-                </div>
-            </li>
-            <!-- [product] ::end -->
+                <!-- [product] ::start -->
+                <li class="item">
+                    <a href="#" class="list-link">
+                        <figure class="product">
+                            <img src="public/images/taylor-swift-red-cover.jpg" alt="Taylor Swift Red album poster" class="cover" />
+                            <figcaption class="caption">
+                                <span class="title searchable desc">Red</span>
+                                <span class="name searchable desc">Taylor Swift</span>
+                                <span class="price desc">$14.99</span>
+                                <span class="btn desc">Buy this Product</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="tags-holder">
+                        <a href="#" class="tag-item">red</a>
+                        <a href="#" class="tag-item">taylor swift</a>
+                        <a href="#" class="tag-item">album</a>
+                        <a href="#" class="tag-item">music</a>
+                    </div>
+                </li>
+                <!-- [product] ::end -->
 
-            <!-- [product] ::start -->
-            <li class="item">
-                <a href="#" class="list-link">
-                    <figure class="product">
-                        <img src="public/images/white-house-down.jpg" alt="White House Down movie poster" class="cover" />
-                        <figcaption class="caption">
-                            <span class="title searchable desc">White House Down</span>
-                            <span class="price desc">$14.99</span>
-                            <span class="btn desc">Buy this Product</span>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="tags-holder">
-                    <a href="#" class="tag-item">white house down</a>
-                    <a href="#" class="tag-item">movie</a>
-                </div>
-            </li>
-            <!-- [product] ::end -->
+                <!-- [product] ::start -->
+                <li class="item">
+                    <a href="#" class="list-link">
+                        <figure class="product">
+                            <img src="public/images/white-house-down.jpg" alt="White House Down movie poster" class="cover" />
+                            <figcaption class="caption">
+                                <span class="title searchable desc">White House Down</span>
+                                <span class="price desc">$14.99</span>
+                                <span class="btn desc">Buy this Product</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="tags-holder">
+                        <a href="#" class="tag-item">white house down</a>
+                        <a href="#" class="tag-item">movie</a>
+                    </div>
+                </li>
+                <!-- [product] ::end -->
 
-            <!-- [product] ::start -->
-            <li class="item">
-                <a href="#" class="list-link">
-                    <figure class="product">
-                        <img src="public/images/taylor-swift-speak-now-cover.jpg" alt="Taylor Swift Speak Now album cover" class="cover" />
-                        <figcaption class="caption">
-                            <span class="title searchable desc">Speak Now</span>
-                            <span class="name searchable desc">Taylor Swift</span>
-                            <span class="price desc">$13.99</span>
-                            <span class="btn desc">Buy this Product</span>
-                        </figcaption>
-                    </figure>
-                </a>
-                <div class="tags-holder">
-                    <a href="#" class="tag-item">taylor swift</a>
-                    <a href="#" class="tag-item">album</a>
-                    <a href="#" class="tag-item">music</a>
-                </div>
-            </li>
-            <!-- [product] ::end -->
+                <!-- [product] ::start -->
+                <li class="item">
+                    <a href="#" class="list-link">
+                        <figure class="product">
+                            <img src="public/images/taylor-swift-speak-now-cover.jpg" alt="Taylor Swift Speak Now album cover" class="cover" />
+                            <figcaption class="caption">
+                                <span class="title searchable desc">Speak Now</span>
+                                <span class="name searchable desc">Taylor Swift</span>
+                                <span class="price desc">$13.99</span>
+                                <span class="btn desc">Buy this Product</span>
+                            </figcaption>
+                        </figure>
+                    </a>
+                    <div class="tags-holder">
+                        <a href="#" class="tag-item">taylor swift</a>
+                        <a href="#" class="tag-item">album</a>
+                        <a href="#" class="tag-item">music</a>
+                    </div>
+                </li>
+                <!-- [product] ::end -->
 
-        </ul>
-        <!-- [Searchable Group] ::end -->
+            </ul>
+            <!-- [Searchable Group] ::end -->
+        </div>
     </section>
 
 
-    <script type="text/javascript" src="public/lib/js/common.js"></script>
+    <script src="public/lib/js/common.js"></script>
 </body>
 </html>
