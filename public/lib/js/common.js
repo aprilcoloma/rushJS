@@ -1,41 +1,30 @@
 
-    //if input field is not empty
-    function detectInput() {
-        var doc = document,
-        listItems = doc.getElementsByTagName('li'),
-        itemsCount = listItems.length,
-        searchFilter = doc.getElementById('search_box_txt'),
-        searchFilterValue = doc.getElementById('search_box_txt').value,
-        searchPattern = new RegExp(/^[a-zA-Z0-9-]+$/);
+//if input field is not empty
+function detectInput() {
+    var doc = document,
+    listItems = doc.getElementsByTagName('li'),
+    itemsCount = listItems.length,
+    searchFilter = doc.getElementById('search_box_txt'),
+    searchFilterValue = doc.getElementById('search_box_txt').value,
+    searchValuePattern = /[a-zA-Z0-9-_]+/g;
+    // searchPattern = new RegExp(/^[a-zA-Z0-9-]+$/);
 
-        var listSearchableItems = function(a) {
-            var searchableAreaGroup = doc.getElementById(a);
-                
-                // searchableElement = searchableAreaGroup.getElementsByClassName(b),
-                // descList = searchableElement.length,
-                // arrayItems = [];
+    for (var x = 0; x < itemsCount; x++) {
 
-            for (var j = 0; j < itemsCount; j++) {
-                var textContent = listItems[j].textContent,
-                    searchValuePattern = /[a-zA-Z0-9-_]+/g,
-                    searchValueResult = textContent.match(searchValuePattern),
-                    itemFound = searchValueResult.indexOf(searchFilterValue);
-            
+        var textContentList = listItems[x].textContent, 
+            searchValueResult = textContentList.match(searchValuePattern),
+            itemFound = searchValueResult.indexOf(searchFilterValue);
 
-                    if (itemFound === -1) {
-                        return false;
+        if (itemFound !== -1) {
+            console.log(itemFound);
+            console.log(searchValueResult)
+            listItems[x].className = "item active";
+        } else {
+            listItems[x].className = "item inactive";
+        }
+    }
 
-                    } else {
-
-                        console.log(itemFound);
-                        console.log(searchValueResult);   
-                    }
-            }
- 
-        };
-
-        listSearchableItems('searchable-group');
-    };
+};
 
 
 
