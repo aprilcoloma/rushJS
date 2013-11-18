@@ -1,33 +1,40 @@
-
-//if input field is not empty
-function detectInput() {
+var rushFilter = function(a) {
     var doc = document,
-    listItems = doc.getElementsByTagName('li'),
-    itemsCount = listItems.length,
-    searchFilter = doc.getElementById('search_box_txt'),
-    searchFilterValue = doc.getElementById('search_box_txt').value,
-    searchValuePattern = /[a-zA-Z0-9-_]+/g;
-    // searchPattern = new RegExp(/^[a-zA-Z0-9-]+$/);
+        getParent = doc.getElementById(a),
+        searchFilter = doc.getElementById('search_box_txt');
 
-    for (var x = 0; x < itemsCount; x++) {
+        getParent.className = "rush-filter-list clearfix";
 
-        var textContentList = listItems[x].textContent, 
-            searchValueResult = textContentList.match(searchValuePattern),
-            itemFound = searchValueResult.indexOf(searchFilterValue);
+    //detect if search input field has a value
+    searchFilter.onkeyup = function() {
+        
+        var listItems = doc.getElementsByTagName('li'),
+            itemsCount = listItems.length,
+            searchFilterValue = searchFilter.value,
+            searchValuePattern = /[a-zA-Z0-9-_]+/gi;
+            // searchPattern = new RegExp(/^[a-zA-Z0-9-]+$/);
 
-        if (itemFound !== -1) {
-            console.log(itemFound);
-            console.log(searchValueResult)
-            listItems[x].className = "item active";
-        } else {
-            listItems[x].className = "item inactive";
+        for (var x = 0; x < itemsCount; x++) {
+
+            var textContentList = listItems[x].textContent, 
+                searchValueResult = textContentList.match(searchValuePattern),
+                itemFound = searchValueResult.indexOf(searchFilterValue);
+
+
+            // if a match is found, make the matched items visible
+            // if search filter is empty, display all the items
+            if ((itemFound !== -1) || (searchFilterValue === "")) {
+                listItems[x].className = "item active";
+            }
+            else {
+                listItems[x].className = "item inactive";
+            }
         }
-    }
+    };
 
 };
 
-
-
+rushFilter('searchable-group');
 
 
 

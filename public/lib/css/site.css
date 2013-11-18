@@ -1,1 +1,95 @@
-.list li.inactive { display: none; }
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #e9f2f9;
+}
+
+#masthead {
+    background-color: #eb3a70;
+    margin: 0 auto;
+    text-align: center;
+    padding: 40px;
+}
+
+#inner-content { 
+    width: 100%;
+    max-width: 900px; 
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    margin: 0 auto 20px;
+    color: #fff;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+.filter-form fieldset { border: 0; }
+.filter-form input {
+    background-color: #eb3a70;
+    border: 1px solid #fff;
+    font-size: 1.4em;
+    border-radius: 16px;
+    padding: 10px;
+    color: #fa789f;
+}
+
+
+.rush-filter-list {
+    margin: 20px 0;
+    padding: 0;
+}
+.rush-filter-list li {
+    list-style: none;
+    float: left;
+    width: 30%;
+    min-height: 400px;
+    /*padding: 4px;*/
+    margin-right: 2%;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.rush-filter-list li:last-child { margin-right: 0; }
+.rush-filter-list li.inactive { display: none; }
+.rush-filter-list .list-link { 
+    text-decoration: none; 
+    border: 1px solid #c2ddf1;
+    display: block;
+    padding: 6px 0;
+}
+.rush-filter-list .list-link:hover { 
+    background-color: #f4faff; 
+    border-color: #ffb9ce;
+}
+
+.rush-filter-list .caption .desc { display: block; }
+.rush-filter-list .caption .title { color: #f72e6b; }
+.rush-filter-list .caption .name,
+.rush-filter-list .caption .price { 
+    color: #404040; 
+    font-size: 12px;
+}
+.rush-filter-list .caption .btn {
+    display: inline-block;
+    background-color: #f72e6b;
+    color: #fff;
+    border-radius: 14px;
+    padding: 4px 14px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.rush-filter-list .caption .btn:hover {
+    background-color: #4487f5;
+}
+
+.rush-filter-list .tags-holder .tag-item {
+    font-size: 11px;
+    color: #619bfb;
+    text-decoration: none;
+}
+.rush-filter-list .tags-holder .tag-item:hover { 
+    color: #000; 
+    text-decoration: underline;
+}
