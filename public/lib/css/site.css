@@ -1,10 +1,10 @@
 @font-face { 
     font-family: 'Cicle Gordita Gordita'; 
-    src: url('../fonts/circle.gordita.gordita/cicle.gordita.gordita.eot'); 
-    src: url('../fonts/circle.gordita.gordita/cicle.gordita.gordita.eot?#iefix') format('embedded-opentype'), 
-         url('../fonts/circle.gordita.gordita/cicle.gordita.gordita.woff') format('woff'), 
-         url('../fonts/circle.gordita.gordita/cicle.gordita.gordita.ttf') format('truetype'), 
-         url('../fonts/circle.gordita.gordita/cicle.gordita.gordita.svg#webfont') format('svg'); 
+    src: url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.eot'); 
+    src: url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.eot?#iefix') format('embedded-opentype'), 
+         url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.woff') format('woff'), 
+         url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.ttf') format('truetype'), 
+         url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.svg#webfont') format('svg'); 
 }
 
 body {
@@ -44,7 +44,7 @@ body {
     color: #fff;
     text-align: center;
     font-weight: normal;
-    font-size: 2.4em;
+    font-size: 4.4em;
 }
 
 .filter-form fieldset { border: 0; }
@@ -54,7 +54,7 @@ body {
     border-radius: 16px;
     background-color: #eb3a70;
     color: #fa789f;
-    font-size: 1.4em;
+    font-size: 2.4em;
 }
 
 
@@ -89,13 +89,14 @@ body {
 .rush-filter-list .caption .title { 
     margin-bottom: 4px;
     color: #f72e6b; 
-    font-size: 1.4em;
+    font-size: 1.7em;
 }
 .rush-filter-list .caption .name,
 .rush-filter-list .caption .price { 
     color: #404040; 
-    font-size: 1.2em;
+    font-size: 1.4em;
 }
+.rush-filter-list .caption .name { margin-bottom: 6px; }
 .rush-filter-list .caption .btn {
     display: inline-block;
     margin-top: 10px;
@@ -103,14 +104,14 @@ body {
     border-radius: 14px;
     background-color: #f72e6b;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.6em;
 }
 .rush-filter-list .caption .btn:hover { background-color: #4487f5; }
 .rush-filter-list .tags-holder { margin-top: 10px; }
 .rush-filter-list .tags-holder .tag-item {
     color: #619bfb;
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1.3em;
 }
 .rush-filter-list .tags-holder .tag-item:hover { 
     color: #000; 
