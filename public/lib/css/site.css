@@ -26,12 +26,30 @@ body {
 
 
 
-#masthead {
+.masthead {
     margin: 0 auto;
     padding: 40px;
     background-color: #eb3a70;
     text-align: center;
 }
+.masthead .description {
+    margin: 0 0 20px 0;
+    padding: 0;
+    display: block;
+}
+.masthead .description li {
+    display: inline-block;
+    list-style-position: inside;
+    list-style-type: disc;
+    margin-right: 10px;
+    color: #ffa3bf;
+    font-size: 1.6em;
+    font-style: italic;
+    font-family: Georgia, 'Times New Roman', serif;
+    border-left: 1px solid #ff4d83;
+    padding-left: 10px;
+}
+.masthead .description li:first-child { border-left: none; }
 
 #inner-content { 
     margin: 0 auto;
@@ -47,15 +65,24 @@ body {
     font-size: 4.4em;
 }
 
+
+
+.filter-form { 
+    max-width: 700px; 
+    margin: 0 auto;
+}
 .filter-form fieldset { border: 0; }
 .filter-form input {
     padding: 10px;
-    border: 1px solid #fff;
-    border-radius: 16px;
+    border: 1px solid #ff4d83;
+    border-radius: 6px;
     background-color: #eb3a70;
     color: #fa789f;
     font-size: 2.4em;
+    width: 100%;
 }
+.filter-form input:focus { border-color: #fff; }
+.filter-form #search_btn { display: none; }
 
 
 .rush-filter-list {
