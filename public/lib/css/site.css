@@ -1,3 +1,12 @@
+@font-face { 
+    font-family: 'Cicle Gordita Gordita'; 
+    src: url('cicle.gordita.gordita.eot'); 
+    src: url('cicle.gordita.gordita.eot?#iefix') format('embedded-opentype'), 
+         url('cicle.gordita.gordita.woff') format('woff'), 
+         url('cicle.gordita.gordita.ttf') format('truetype'), 
+         url('cicle.gordita.gordita.svg#webfont') format('svg'); 
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -12,8 +21,10 @@ body {
     background: linear-gradient(to bottom,  #ffeef3 0%,#e2f3fb 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeef3', endColorstr='#e2f3fb',GradientType=0 ); /* IE6-8 */
 
-    font-family: Georgia, 'Times New Roman', serif;
+    font-family: 'Cicle Gordita Gordita', 'Times New Roman', serif;
 }
+
+
 
 #masthead {
     margin: 0 auto;
@@ -72,7 +83,7 @@ body {
     border-color: #ffb9ce;
     background-color: #f4faff;
 }
-
+.rush-filter-list .product { padding: 16px 0; }
 .rush-filter-list .caption { margin-top: 10px; }
 .rush-filter-list .caption .desc { display: block; }
 .rush-filter-list .caption .title { 
