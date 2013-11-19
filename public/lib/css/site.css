@@ -1,11 +1,19 @@
-@font-face { 
-    font-family: 'Cicle Gordita Gordita'; 
-    src: url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.eot'); 
-    src: url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.eot?#iefix') format('embedded-opentype'), 
-         url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.woff') format('woff'), 
-         url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.ttf') format('truetype'), 
-         url('../../fonts/circle.gordita.gordita/cicle.gordita.gordita.svg#webfont') format('svg'); 
+/*------------------------------------------------------------------
+ # [Fonts] ::start
+-------------------------------------------------------------------*/
+
+@font-face{ font-family: 'WeblySleek UI Light Regular'; 
+    src: url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.eot'); 
+    src: url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.eot?#iefix') format('embedded-opentype'), 
+    url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.woff') format('woff'), 
+    url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.ttf') format('truetype'), 
+    url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.svg#webfont') format('svg'); 
 }
+
+/*------------------------------------------------------------------
+ # [Fonts] ::end
+-------------------------------------------------------------------*/
+
 
 body {
     margin: 0;
@@ -21,7 +29,7 @@ body {
     background: linear-gradient(to bottom,  #ffeef3 0%,#e2f3fb 100%); /* W3C */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeef3', endColorstr='#e2f3fb',GradientType=0 ); /* IE6-8 */
 
-    font-family: 'Cicle Gordita Gordita', 'Times New Roman', serif;
+    font-family: 'WeblySleek UI Light Regular', 'Times New Roman', serif;
 }
 
 
@@ -67,6 +75,9 @@ body {
 
 
 
+/*------------------------------------------------------------------
+ # [Filter Form] ::start
+-------------------------------------------------------------------*/
 .filter-form { 
     max-width: 700px; 
     margin: 0 auto;
@@ -74,17 +85,27 @@ body {
 .filter-form fieldset { border: 0; }
 .filter-form input {
     padding: 10px;
+    width: 100%;
     border: 1px solid #ff4d83;
-    border-radius: 6px;
+
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+
     background-color: #eb3a70;
     color: #fa789f;
     font-size: 2.4em;
-    width: 100%;
 }
 .filter-form input:focus { border-color: #fff; }
 .filter-form #search_btn { display: none; }
+/*------------------------------------------------------------------
+ # [Filter Form] ::end
+-------------------------------------------------------------------*/
 
 
+/*------------------------------------------------------------------
+ # [Rush Filter List] ::start
+-------------------------------------------------------------------*/
 .rush-filter-list {
     margin: 20px 0;
     padding: 0;
@@ -128,7 +149,11 @@ body {
     display: inline-block;
     margin-top: 10px;
     padding: 8px 14px;
+
+    -webkit-border-radius: 14px;
+    -moz-border-radius: 14px;
     border-radius: 14px;
+
     background-color: #f72e6b;
     color: #fff;
     font-size: 1.6em;
@@ -144,3 +169,6 @@ body {
     color: #000; 
     text-decoration: underline;
 }
+/*------------------------------------------------------------------
+ # [Rush Filter List] ::end
+-------------------------------------------------------------------*/
