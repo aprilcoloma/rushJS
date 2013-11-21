@@ -7,7 +7,16 @@
     src: url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.eot?#iefix') format('embedded-opentype'), 
     url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.woff') format('woff'), 
     url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.ttf') format('truetype'), 
-    url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.svg#webfont') format('svg'); 
+    url('../../fonts/weblysleek.ui.light.regular/weblysleek.ui.light.regular.svg#../../fonts/bebas.neue.regular/bebas.neue.regular') format('svg'); 
+}
+
+@font-face{ 
+    font-family: 'Bebas Neue Regular'; 
+    src: url('../../fonts/bebas.neue.regular/bebas.neue.regular.eot'); 
+    src: url('../../fonts/bebas.neue.regular/bebas.neue.regular.eot?#iefix') format('embedded-opentype'), 
+    url('../../fonts/bebas.neue.regular/bebas.neue.regular.woff') format('woff'), 
+    url('../../fonts/bebas.neue.regular/bebas.neue.regular.ttf') format('truetype'), 
+    url('../../fonts/bebas.neue.regular/bebas.neue.regular.svg#../../fonts/bebas.neue.regular/bebas.neue.regular') format('svg'); 
 }
 
 /*------------------------------------------------------------------
