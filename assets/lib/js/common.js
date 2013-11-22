@@ -1,9 +1,17 @@
 var rushFilter = function(a) {
     var doc = document,
         getParent = doc.getElementById(a),
-        searchFilter = doc.getElementById('search_box_txt');
+        searchFilter = doc.getElementById('search_box_txt'),
+        searchLabel = doc.getElementById('search-label');
 
-        getParent.className = "rush-filter-list clearfix";
+    getParent.className = "rush-filter-list clearfix";
+
+    var displayInput = function() {
+        searchFilter.style.display = "block";
+    };
+    searchLabel.addEventListener("click", displayInput);
+
+
 
     //detect if search input field has a value
     searchFilter.onkeyup = function() {
