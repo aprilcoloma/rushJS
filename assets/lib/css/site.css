@@ -27,17 +27,7 @@
 body {
     margin: 0;
     padding: 0;
-    background: #ffeef3; /* Old browsers */
-    /* IE9 SVG, needs conditional override of 'filter' to 'none' */
-    background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZWVmMyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlMmYzZmIiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
-    background: -moz-linear-gradient(top,  #ffeef3 0%, #e2f3fb 100%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffeef3), color-stop(100%,#e2f3fb)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top,  #ffeef3 0%,#e2f3fb 100%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top,  #ffeef3 0%,#e2f3fb 100%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top,  #ffeef3 0%,#e2f3fb 100%); /* IE10+ */
-    background: linear-gradient(to bottom,  #ffeef3 0%,#e2f3fb 100%); /* W3C */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffeef3', endColorstr='#e2f3fb',GradientType=0 ); /* IE6-8 */
-
+    background-color: #fff;
     font-family: 'WeblySleek UI Light Regular', 'Times New Roman', serif;
 }
 
@@ -45,8 +35,9 @@ body {
 
 .masthead {
     margin: 0 auto;
-    padding: 40px;
-    background-color: #eb3a70;
+    padding: 40px 0 0 0;
+    min-height: 100px;
+    background-color: #232323;
     text-align: center;
 }
 .masthead .description {
@@ -92,20 +83,34 @@ body {
     margin: 0 auto;
 }
 .filter-form fieldset { border: 0; }
-.filter-form input {
+.filter-form .search-input {
+    display: none;
+    margin-top: 20px;
     padding: 10px;
     width: 100%;
-    border: 1px solid #ff4d83;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 10px solid #333333;
+    border-left: 0;
+    background-color: #232323;
+    color: #6ae368;
+    text-align: center;
+    font-size: 10em;
+    font-family: 'Bebas Neue Regular', 'Times New Roman', serif;
 
-    -webkit-border-radius: 4px;
-    -moz-border-radius: 4px;
-    border-radius: 4px;
-
-    background-color: #eb3a70;
-    color: #fa789f;
-    font-size: 2.4em;
+    -webkit-transition: border-color 0.5s;
+    -moz-transition: border-color 0.5s;
+    -ms-transition: border-color 0.5s;
+    -o-transition: border-color 0.5s;
+    transition: border-color 0.5s;
 }
-.filter-form input:focus { border-color: #fff; }
+.filter-form .search-input:focus { border-color: #15b74e; }
+.filter-form .search-label {
+    color: #565656;
+    font-style: italic;
+    font-size: 1.6em;
+    cursor: text;
+}
 .filter-form #search_btn { display: none; }
 /*------------------------------------------------------------------
  # [Filter Form] ::end
@@ -133,19 +138,16 @@ body {
 .rush-filter-list .list-link { 
     display: block;
     padding: 10px; 
-    border: 1px solid #c2ddf1;
+    border: 1px solid #e2e2e2;
     text-decoration: none;
 }
-.rush-filter-list .list-link:hover { 
-    border-color: #ffb9ce;
-    background-color: #f4faff;
-}
+.rush-filter-list .list-link:hover { border-color: #c3c3c3; }
 .rush-filter-list .product { padding: 16px 0; }
 .rush-filter-list .caption { margin-top: 10px; }
 .rush-filter-list .caption .desc { display: block; }
 .rush-filter-list .caption .title { 
     margin-bottom: 4px;
-    color: #f72e6b; 
+    color: #fb3838; 
     font-size: 1.7em;
 }
 .rush-filter-list .caption .name,
@@ -163,16 +165,20 @@ body {
     -moz-border-radius: 14px;
     border-radius: 14px;
 
-    background-color: #f72e6b;
+    background-color: #15b74e;
     color: #fff;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
-.rush-filter-list .caption .btn:hover { background-color: #4487f5; }
+.rush-filter-list .list-link:hover .btn, 
+.rush-filter-list .caption .btn:hover { 
+    background-color: #fb3838; 
+}
 .rush-filter-list .tags-holder { margin-top: 10px; }
 .rush-filter-list .tags-holder .tag-item {
-    color: #619bfb;
+    color: #8c8c8c;
     text-decoration: none;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-family: Tahoma, Arial, Verdana, sans-serif;
 }
 .rush-filter-list .tags-holder .tag-item:hover { 
     color: #000; 
