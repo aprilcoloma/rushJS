@@ -84,7 +84,6 @@ body {
 }
 .filter-form fieldset { border: 0; }
 .filter-form .search-input {
-    display: none;
     margin-top: 20px;
     padding: 10px;
     width: 100%;
