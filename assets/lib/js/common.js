@@ -3,7 +3,8 @@ var rushFilter = function(a) {
         dbody = doc.body,
         getParent = doc.getElementById(a),
         searchFilter = doc.getElementById('search_box_txt'),
-        searchLabel = doc.getElementById('search-label');
+        searchLabel = doc.getElementById('search-label'),
+        filterStatus = searchFilter.style.display;
 
     getParent.className = "rush-filter-list clearfix";
     searchFilter.style.display = "none";
@@ -15,6 +16,12 @@ var rushFilter = function(a) {
             searchFilter.classList.add("active");
             searchFilter.classList.remove("hide");
             searchFilter.focus();
+        }
+
+        else if ( (searchFilter.value !== "") && (searchFilter.style.display === "block")) {
+            searchFilter.style.display = "block";
+            searchFilter.classList.add("hide");
+            searchFilter.classList.remove("active");
         }
 
         else {
