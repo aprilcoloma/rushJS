@@ -1,16 +1,31 @@
 var rushFilter = function(a) {
     var doc = document,
+        dbody = doc.body,
         getParent = doc.getElementById(a),
         searchFilter = doc.getElementById('search_box_txt'),
         searchLabel = doc.getElementById('search-label');
 
     getParent.className = "rush-filter-list clearfix";
+    searchFilter.style.display = "none";
 
-    var displayInput = function() {
-        searchFilter.style.display = "block";
+    var toggleSearchInput = function() {
+        if ( (searchFilter.value === "") && (searchFilter.style.display === "none") ) {
+
+            searchFilter.style.display = "block";
+            searchFilter.classList.add("active");
+            searchFilter.classList.remove("hide");
+            searchFilter.focus();
+        }
+
+        else {
+            searchFilter.style.display = "none";
+            searchFilter.classList.add("hide");
+            searchFilter.classList.remove("active");
+        }
     };
-    searchLabel.addEventListener("click", displayInput);
 
+
+    doc.addEventListener("click", toggleSearchInput);
 
 
     //detect if search input field has a value
